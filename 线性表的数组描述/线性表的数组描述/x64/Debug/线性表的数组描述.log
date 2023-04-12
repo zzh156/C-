@@ -1,0 +1,6 @@
+﻿  linearlist.cpp
+C:\Users\12779\Desktop\library\C-\线性表的数组描述\线性表的数组描述\linearlist.cpp(26,1): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\12779\Desktop\library\C-\线性表的数组描述\线性表的数组描述\linearlist.cpp(25,1): message : 在编译 类 模板 成员函数“int Linearlist<int>::size(void)”时
+C:\Users\12779\Desktop\library\C-\线性表的数组描述\线性表的数组描述\linearlist.cpp(75,38): message : 查看对正在编译的函数 模板 实例化“int Linearlist<int>::size(void)”的引用
+C:\Users\12779\Desktop\library\C-\线性表的数组描述\线性表的数组描述\linearlist.cpp(72,21): message : 查看对正在编译的 类 模板 实例化“Linearlist<int>”的引用
+  线性表的数组描述.vcxproj -> C:\Users\12779\Desktop\library\C-\线性表的数组描述\x64\Debug\线性表的数组描述.exe
