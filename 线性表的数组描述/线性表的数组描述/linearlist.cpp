@@ -61,29 +61,39 @@ public:
 
         }
     }
+    void give_value()
+    {
+        for (T& value : vector1)
+        {
+            std::cout << "请输入vector1中的元素值" << std::endl;
+            std::cin >> value;
+        }
+    }
 };
+
+template<typename T>
+
 int main()
 {
     int size, index;
+    T target;
     std::cout << "请输入size" << std::endl;
     std::cin >> size;
-    std::cout << "请输入index" << std::endl;
-    std::cin >> index;
     Linearlist<int> mylinearlist;
     mylinearlist.create(size);
-    std::cout<<mylinearlist.empty()<<std::endl;
-    std::cout << mylinearlist.size() << std::endl;
+    std::cout << "创建了一个size大小的vector" << std::endl;
+    std::cout<<"线性表是否为空" << mylinearlist.empty() << std::endl;
+    std::cout << "线性表的大小" << mylinearlist.size() << std::endl;
+    std::cout << "依次为vector1中的元素赋值" << std::endl;
+    mylinearlist.give_value();
+    std::cout << "请输入查找的索引" << std::endl;
+    std::cout << "请输入index" << std::endl;
+    std::cin >> index;
+    std::cout << "值是" << std::endl;
+    std::cout << mylinearlist.find(index) << std::endl;
+    std::cout << "请输入要查找的元素" << std::endl;
+    std::cin >> target >> std::endl;
+    std::cout << mylinearlist.findindex(target) << std::endl;
 
-
-
-
-
-
-
-
-
-
-
-
-
+    return 0;
 }
